@@ -51,7 +51,8 @@ namespace InveonWebUI.Controllers
                 ProductBarcode = productViewModel.ProductBarcode,
                 ProductIsActive = true,
                 ProductPrice = productViewModel.ProductPrice,
-                ProductUnit = productViewModel.ProductUnit
+                ProductUnit = productViewModel.ProductUnit,
+                ProductDescryption = productViewModel.ProductDescryption
 
             };
             if (productViewModel.ProductPhoto != null)
@@ -88,7 +89,8 @@ namespace InveonWebUI.Controllers
                 ProductBarcode = productViewModel.ProductBarcode,
                 ProductIsActive = true,
                 ProductPrice = productViewModel.ProductPrice,
-                ProductUnit = productViewModel.ProductUnit
+                ProductUnit = productViewModel.ProductUnit,
+                ProductDescryption = productViewModel.ProductDescryption
             };
 
             if (productViewModel.ProductPhoto != null)

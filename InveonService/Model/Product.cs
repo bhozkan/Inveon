@@ -10,6 +10,7 @@ namespace InveonService.Model
         public int Id { get; set; }
         public string ProductName { get; set; }
         public string ProductBarcode { get; set; }
+        public string ProductDescryption { get; set; }
         public string ProductImageUrl { get; set; }
         public double ProductPrice { get; set; }
         public int ProductUnit { get; set; }
