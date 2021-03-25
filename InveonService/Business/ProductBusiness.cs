@@ -34,7 +34,9 @@ namespace InveonService.Business
                 ProductImageUrl = addProduct.ProductImageUrl,
                 ProductName = addProduct.ProductName,
                 ProductPrice = addProduct.ProductPrice,
-                ProductUnit = addProduct.ProductUnit
+                ProductUnit = addProduct.ProductUnit,
+                ProductDescryption = addProduct.ProductDescryption
+                
             };
 
             inveonContext.Products.Add(product);
@@ -59,6 +61,8 @@ namespace InveonService.Business
             product.ProductName = editProduct.ProductName;
             product.ProductPrice = editProduct.ProductPrice;
             product.ProductUnit = editProduct.ProductUnit;
+            product.ProductDescryption = editProduct.ProductDescryption;
+
 
             inveonContext.Products.Update(product);
 
