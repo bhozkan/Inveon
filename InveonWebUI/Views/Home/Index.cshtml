@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    List<Product> productViewModels = Model;
+}
+
+
+
+<h1>Index</h1>
+<form>
+    <div class="container">
+        <h3 class="h3">Ürünler</h3>
+        <div class="row">
+            @foreach (var item in productViewModels)
+            {
+                <div class="col-md-3 col-sm-6" style="padding-top:40px">
+                    <div class="product-grid9">
+                        <div class="product-image9">
+
+                            <a href="#">
+                                <img class="pic-1" src="@item.ProductImageUrl">
+                            </a>
+                            <a href="#" class="fa fa-search product-full-view"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title" style="color: cornflowerblue">@item.ProductName</h3>
+                            <div class="price">Fiyat: @String.Format("{0:0,0.00}", item.ProductPrice)</div>
+                            @using System.Security.Claims;
+                            @if (User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault().Value == "admin")
+                            {
+                                <div class="row justify-content-between" style="padding-top:10px">
+                                    <div class="justify-content-start col-6" style="padding-left:5px"><button type="submit" class="btn btn-primary btn-sm btn-block" asp-action="EditProduct" asp-controller="Home" asp-route-id="@item.Id">Düzenle</button></div>
+                                    <div class="justify-content-end col-4" style=" padding-right:5px"><button type="submit" class="btn btn-danger btn-sm btn-block" asp-action="DeleteProduct" asp-controller="Home" asp-route-id="@item.Id">Sil</button></div>
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</form>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InveonService", "InveonService\InveonService.csproj", "{EB3FA3F7-194B-4CCB-8549-C9FE4401671B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InveonWebUI", "InveonWebUI\InveonWebUI.csproj", "{2985DAEE-47CA-4757-AEEC-05FB2983599B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3FA3F7-194B-4CCB-8549-C9FE4401671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3FA3F7-194B-4CCB-8549-C9FE4401671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3FA3F7-194B-4CCB-8549-C9FE4401671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3FA3F7-194B-4CCB-8549-C9FE4401671B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2985DAEE-47CA-4757-AEEC-05FB2983599B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2985DAEE-47CA-4757-AEEC-05FB2983599B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2985DAEE-47CA-4757-AEEC-05FB2983599B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2985DAEE-47CA-4757-AEEC-05FB2983599B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB895C55-E6BC-4BC2-BE7D-3E450F42C925}
+	EndGlobalSection
+EndGlobal
